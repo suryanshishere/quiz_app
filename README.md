@@ -2,6 +2,8 @@
 
 A dynamic, full-featured quiz application built with React, TypeScript, Redux, and Tailwind CSS. This project was developed to showcase modern front-end development practices, including robust state management, API handling, and a focus on a clean, responsive user experience.
 
+Deployed website link: https://quizo-six-sooty.vercel.app
+
 ## Features
 
 This application includes a wide range of features to provide a complete and engaging quiz experience.
