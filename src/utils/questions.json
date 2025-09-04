@@ -1,0 +1,62 @@
+[
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which company was established on April 1st, 1976 by Steve Jobs, Steve Wozniak and Ronald Wayne?",
+    "correct_answer": "Apple",
+    "incorrect_answers": [
+      "Microsoft",
+      "Atari",
+      "Commodore"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the largest organ of the human body?",
+    "correct_answer": "Skin",
+    "incorrect_answers": [
+      "Heart",
+      "Large Intestine",
+      "Liver"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which of the following is NOT a character in the video game 'Super Mario Bros.'?",
+    "correct_answer": "Sonic",
+    "incorrect_answers": [
+      "Luigi",
+      "Princess Peach",
+      "Toad"
+    ]
+  },
+  {
+    "category": "Geography",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the capital of Japan?",
+    "correct_answer": "Tokyo",
+    "incorrect_answers": [
+      "Kyoto",
+      "Osaka",
+      "Seoul"
+    ]
+  },
+  {
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Who was the first person to walk on the moon?",
+    "correct_answer": "Neil Armstrong",
+    "incorrect_answers": [
+      "Buzz Aldrin",
+      "Yuri Gagarin",
+      "Michael Collins"
+    ]
+  }
+]
