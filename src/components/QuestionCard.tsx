@@ -1,5 +1,11 @@
 import React from 'react';
-import { UserAnswer } from '../types';
+
+// Assuming UserAnswer type is defined elsewhere, e.g., in '../types'
+type UserAnswer = {
+  question: string;
+  answer: string;
+  correctAnswer: string;
+};
 
 type Props = {
   question: string;
@@ -33,7 +39,7 @@ const QuestionCard: React.FC<Props> = ({
         <p className="text-gray-600 font-semibold">
           Question: {questionNr} / {totalQuestions}
         </p>
-        <div className="text-lg font-bold text-purple-700 bg-purple-100 px-3 py-1 rounded-full">
+        <div className="text-lg font-bold text-[#3E506C] bg-[#E0E8F0] px-3 py-1 rounded-full">
           Time: {timer}s
         </div>
       </div>
@@ -43,10 +49,10 @@ const QuestionCard: React.FC<Props> = ({
           const isSelected = userAnswer?.answer === answer;
           const isCorrect = userAnswer?.correctAnswer === answer;
           
-          let btnClasses = 'bg-purple-500 hover:bg-purple-600'; // Default button
+          let btnClasses = 'bg-[#91ADC8] hover:bg-[#647FBC]'; // Default button with new colors
           if (userAnswer) { // An answer has been selected
             if (isCorrect) {
-              btnClasses = 'bg-green-500 text-white animate-pulse'; // Correct answer
+              btnClasses = 'bg-[#556B2F] text-white animate-pulse'; // Correct answer - new green
             } else if (isSelected) {
               btnClasses = 'bg-red-500 text-white'; // Incorrectly selected answer
             } else {
@@ -59,7 +65,7 @@ const QuestionCard: React.FC<Props> = ({
               key={answer}
               disabled={!!userAnswer}
               onClick={() => callback(answer)}
-              className={`text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 w-full text-lg transform active:scale-95 focus:outline-none focus:ring-4 focus:ring-purple-300
+              className={`text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 w-full text-lg transform active:scale-95 focus:outline-none focus:ring-4 focus:ring-[#647FBC]
                 ${userAnswer ? 'cursor-not-allowed' : ''} ${btnClasses}`}
               aria-label={`Answer option: ${decodeHTML(answer)}`}
             >
@@ -73,3 +79,4 @@ const QuestionCard: React.FC<Props> = ({
 };
 
 export default QuestionCard;
+
